@@ -48,6 +48,23 @@
         grid-area: links;
           background: darkorchid;
       }
+      @media(max-width: 320px) {
+      .short-info {
+        position: relative;
+          display: grid;
+          overflow: hidden;
+          height: 100vh;
+          margin: 0px; 
+          grid-template-columns: 1fr 1fr;
+          grid-template-rows: 1fr 1fr 1fr 1fr;
+          grid-template-areas: 
+                      "photo name"
+                      "photo links"
+                      "about about"
+                      "about about";
+
+        }
+    }
       
         
         
@@ -58,7 +75,7 @@
     <div class="photo-block">
         <div class="photo-image"></div>
     </div>
-    <div class="name-block"></div>
+    <div class="name-block">FlexMan</div>
     <div class="about-me-block"></div>
     <div class="links-block"></div>
     </div>
